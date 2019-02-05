@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <TextView
+        android:text="10 lượt thích"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txtLike"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_favorite_border_black_24dp"
+        android:textSize="16sp"
+        android:drawablePadding="5dp"
+        android:layout_weight="1"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:text="8 Bình luận"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txtCNumber"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/ic_chat_bubble_outline_black_24dp"
+        android:textSize="16sp"
+        android:textAlignment="viewStart" />
+
+</LinearLayout>

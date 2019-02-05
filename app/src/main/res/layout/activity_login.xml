@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="nhom4.myfood.LoginActivity"
+    android:weightSum="1">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="myfood"
+                android:layout_width="match_parent"
+                android:id="@+id/txtAppName"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="70sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/editTextEmail"
+                    android:hint="Địa chỉ Email"
+                    android:textColor="@android:color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/editTextPassword"
+                    android:hint="Mật khẩu"
+                    android:textColor="@android:color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:text="Đặt lại mật khẩu"
+                android:layout_width="match_parent"
+                android:id="@+id/textViewDLMK"
+                android:gravity="right|center_vertical"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorIndigo"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:text="Đăng nhập"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDangNhap"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/background_light"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="hoặc đăng nhập bằng"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/textView2"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/signInGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </com.google.android.gms.common.SignInButton>
+
+            <com.facebook.login.widget.LoginButton
+                xmlns:facebook="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/signInFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                facebook:com_facebook_login_text="ĐĂNG NHẬP  VỚI FACEBOOK"
+                />
+
+            <Button
+                android:text="Đăng ký ngay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDangKy"
+                android:background="@android:color/holo_orange_light"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

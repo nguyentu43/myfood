@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dang_bai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nhom4.myfood.DangBaiActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tiêu đề"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/editTitle" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editContent"
+                    android:layout_weight="1"
+                    android:hint="Nội dung"
+                    android:gravity="top|center_vertical"
+                    android:layout_height="150dp"
+                    android:textColor="@android:color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:text="Thêm ảnh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnThem"
+                android:layout_weight="1"
+                android:textColor="@color/black" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageListRView"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

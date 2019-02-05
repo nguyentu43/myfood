@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nhom4.myfood.CaiDatFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:text="Thay đổi thông tin tài khoản"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_change_profile"
+        android:textColor="@color/colorWhite"
+        android:background="@color/com_facebook_button_background_color"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:text="Đăng xuất"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_logout"
+        android:textColor="@color/colorWhite"
+        android:background="?attr/colorAccent"
+        android:layout_margin="10dp" />
+</LinearLayout>

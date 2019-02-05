@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nhom4.myfood.BangTinFragment"
+    android:layout_margin="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewBangTin"
+        android:layout_marginTop="60dp">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id = "@+id/swipeRefresh"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bangTinRecycleView"
+                android:scrollbars="vertical"
+                android:layout_marginTop="5dp" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:id="@+id/floatingActionButton"
+        app:elevation="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/pencil"
+        android:layout_gravity="bottom|right"
+        app:backgroundTint="@color/colorAccent" />
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_leftActionMode="showSearch"
+        app:floatingSearch_searchBarMarginLeft="7dp"
+        app:floatingSearch_searchBarMarginRight="7dp"
+        app:floatingSearch_searchBarMarginTop="7dp"
+        app:floatingSearch_searchHint="Tìm kiếm..."
+        android:id="@+id/fSearchView">
+    </com.arlib.floatingsearchview.FloatingSearchView>
+
+</FrameLayout>

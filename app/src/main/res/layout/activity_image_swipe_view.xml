@@ -4,7 +4,7 @@
     android:id="@+id/activity_image_swipe_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nhom4.myfood.ImageViewActivity"
+    tools:context="app.myfood.ImageViewActivity"
     android:background="@color/black">
 
     <view

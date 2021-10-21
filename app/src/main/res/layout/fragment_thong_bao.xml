@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="nhom4.myfood.ThongBaoFragment"
+    tools:context="app.myfood.ThongBaoFragment"
     android:layout_margin="10dp">
 
     <!-- TODO: Update blank fragment layout -->

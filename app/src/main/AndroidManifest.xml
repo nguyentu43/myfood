@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nhom4.myfood">
+    package="app.myfood">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -16,22 +16,22 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-        <activity android:name=".LoginActivity">
+        <activity android:name="app.myfood.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DangKyActivity" />
+        <activity android:name="app.myfood.DangKyActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="app.myfood.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme" />
-        <activity android:name=".BaiVietActivity" />
-        <activity android:name=".DangBaiActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".ImageViewActivity" />
+        <activity android:name="app.myfood.BaiVietActivity" />
+        <activity android:name="app.myfood.DangBaiActivity" />
+        <activity android:name="app.myfood.ProfileActivity" />
+        <activity android:name="app.myfood.ImageViewActivity" />
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -50,11 +50,11 @@
         </activity>
 
         <service
-            android:name=".NotificationService"
+            android:name="app.myfood.NotificationService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".EditProfile"></activity>
+        <activity android:name="app.myfood.EditProfile"></activity>
     </application>
 
 </manifest>

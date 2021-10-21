@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="nhom4.myfood.CaNhanFragment"
+    tools:context="app.myfood.CaNhanFragment"
     android:gravity="center_horizontal">
 
     <android.support.v7.widget.Toolbar

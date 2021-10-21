@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="nhom4.myfood.DangKyActivity">
+    tools:context="app.myfood.DangKyActivity">
 
     <ScrollView
         android:layout_width="match_parent"
